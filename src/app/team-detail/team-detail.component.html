@@ -1,0 +1,35 @@
+<div>
+  <!-- football-table.component.html -->
+  <table border="1">
+    <tbody>
+      <tr *ngFor="let fix of teamDetailList">
+        <td>
+          <img
+            [src]="fix.teams.away.logo"
+            alt="{{ fix.teams.away.name }} Logo"
+            width="30"
+            height="30"
+          />
+        </td>
+
+        <td>{{ fix.teams.away.name }}</td>
+        <td>{{ fix.goals.away }}</td>
+
+        <td>-</td>
+        <td>{{ fix.goals.home }}</td>
+        <td>{{ fix.teams.home.name }}</td>
+
+        <td>
+          <img
+            [src]="fix.teams.home.logo"
+            alt="{{ fix.teams.home.name }} Logo"
+            width="30"
+            height="30"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<button (click)="goToLeagueSelection()">Back</button>

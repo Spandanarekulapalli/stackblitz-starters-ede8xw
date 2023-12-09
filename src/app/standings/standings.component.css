@@ -1,0 +1,26 @@
+.button-group {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  border: 5px;
+}
+
+.button-group li {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  color: #007bff;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.button-group li:hover {
+  background-color: #0056b3;
+  color: #fff; /* Change the color on hover */
+}
+
+.button-group li:active,
+.active {
+  background-color: #0056b3; /* Change the color when clicked */
+  color: #fff !important;
+}
